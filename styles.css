@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    margin: 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+aside {
+    background-color: blue;
+
+    grid-row: 1 / 5
+}
+
+header {
+    background-color: white;
+}
+
+main {
+    background-color: gainsboro;
+}
