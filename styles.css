@@ -1,3 +1,8 @@
+:root {
+    --green: #65a30d;
+    --red: #e11d48;
+}
+
 body {
     height: 100vh;
     margin: 0px;
@@ -8,9 +13,27 @@ body {
 }
 
 aside {
-    background-color: blue;
+    background-color: var(--green);
 
     grid-row: 1 / 5
+}
+
+div#branding-grid {
+    color: white;
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+#branding-grid > h1 {
+    margin: 0px;
+}
+
+nav, #settings {
+    color: white;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-auto-rows: max-content;
+    align-items: center;
 }
 
 header {
