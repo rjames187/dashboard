@@ -67,12 +67,15 @@ header {
     grid-auto-rows: max-content;
     box-shadow: 0px 2px 9px 5px rgba(0,0,0,0.28);
     z-index: 50;
+    padding: 10px 35px 10px 35px;
+    row-gap: 20px;
 }
 
 #search-bar {
     color: black;
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 #search-bar > input {
@@ -91,6 +94,7 @@ header {
     grid-template-columns: max-content max-content max-content;
     align-items: center;
     justify-content: end;
+    gap: 30px;
 }
 
 .profile-pic {
@@ -108,9 +112,10 @@ header {
 #user-info {
     display: grid;
     grid-template-columns: max-content max-content;
-    grid-template-rows: max-content max-content;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     font-weight: 700;
+    column-gap: 15px;
 }
 
 #user-info > .profile-pic {
@@ -121,6 +126,7 @@ header {
 
 #user-info > div:nth-child(2) {
     font-size: 0.8rem;
+    align-self: end;
 }
 
 #user-info > div:last-child {
@@ -131,7 +137,7 @@ header {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #buttons > button {
@@ -153,6 +159,10 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
+main h2 {
+    font-size: 1.2rem;
+}
+
 
 
 #projects {
@@ -169,12 +179,24 @@ main {
 
 #projects > .card {
     background-color: white;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+.card > h3 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.card > p {
+    font-size: 0.8rem
 }
 
 .card > div {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: end;
+    align-self: end
 }
 
 #announcements > div {
