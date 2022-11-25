@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --green: #65a30d;
     --red: #e11d48;
@@ -6,6 +8,7 @@
 
 * {
     z-index: 99;
+    font-family: Inter;
 }
 
 body {
@@ -20,17 +23,32 @@ body {
 aside {
     background-color: var(--green);
 
-    grid-row: 1 / 5
+    grid-row: 1 / 5;
+
+    padding: 5%;
+    
 }
 
 div#branding-grid {
     color: white;
     display: grid;
     grid-template-columns: max-content max-content;
+    gap: 5%;
+    align-items: center;
+}
+
+#branding-grid > svg {
+    height: 40px;
+    width: 40px;
 }
 
 #branding-grid > h1 {
     margin: 0px;
+}
+
+nav {
+    margin-top: 30%;
+    margin-bottom: 40%;
 }
 
 nav, #settings {
@@ -39,6 +57,7 @@ nav, #settings {
     grid-template-columns: max-content max-content;
     grid-auto-rows: max-content;
     align-items: center;
+    gap: 3%;
 }
 
 header {
