@@ -157,10 +157,13 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 15px;
 }
 
 main h2 {
     font-size: 1.2rem;
+    margin-bottom: 0px;
 }
 
 
@@ -171,6 +174,7 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content repeat(3, 1fr);
+    gap: 15px;
 }
 
 #projects > h2 {
@@ -181,6 +185,9 @@ main h2 {
     background-color: white;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
+    border-radius: 10px;
+    padding: 15px;
+    border-left: solid var(--red) 10px;
 }
 
 .card > h3 {
@@ -189,45 +196,83 @@ main h2 {
 }
 
 .card > p {
-    font-size: 0.8rem
+    font-size: 0.8rem;
+    margin: 0px;
 }
 
 .card > div {
     display: grid;
     grid-template-columns: repeat(3, max-content);
     justify-content: end;
-    align-self: end
+    align-self: end;
+    gap: 20px;
+}
+
+#announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+#announcements > h2 {
+    margin-bottom: 15px;
 }
 
 #announcements > div {
     background-color: white;
+    padding: 20px;
+    border-radius: 10px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#announcements hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: var(--grey);
 }
 
 #announcements h3 {
     margin: 0px;
+    font-size: 0.8rem;
 }
 
 #announcements p {
     margin: 0px;
+    font-size: 0.7rem;
+}
+
+#trending > h2 {
+    margin-bottom: 15px;
 }
 
 #trending > div {
     background-color: white;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
 }
 
 .trending-opt {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(2, 1fr);
-
+    column-gap: 15px;
+    font-size: 0.7rem;
 }
 
 .trending-opt > div:first-child {
     grid-row: 1 / 3;
-    background-color: lightcyan;
+    background-color: var(--red);
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.trending-opt > div:nth-child(2) {
+    font-weight: 700;
 }
